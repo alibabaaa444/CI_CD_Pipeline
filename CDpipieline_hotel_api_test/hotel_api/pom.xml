@@ -158,11 +158,34 @@
         </dependency>
     </dependencies>
 
+
+
+
     <build>
         <finalName>app</finalName> <!-- This is the name of the jar file -->
         <plugins>
 
             <!--  Pom.xml properties plugin  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <transformers>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>dat.Main</mainClass> <!-- Update this with your main class -->
+                        </transformer>
+                    </transformers>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
             <plugin>
                 <!--  https://www.baeldung.com/java-accessing-maven-properties  -->

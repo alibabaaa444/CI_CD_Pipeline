@@ -52,6 +52,7 @@ class HotelRouteTest {
         ApplicationConfig.stopServer(app); // Stop the server after all tests are complete
     }
 
+
     @Test
     void testGetHotel() {
         // Test getting a single hotel by ID
@@ -84,4 +85,6 @@ class HotelRouteTest {
         assertEquals(3, hotelsArray.length); // Check that three hotels were returned
         assertThat(hotelsArray, arrayContainingInAnyOrder(h1, h2, h3)); // Validate the returned hotels match the populated hotels
     }
+
+
 }

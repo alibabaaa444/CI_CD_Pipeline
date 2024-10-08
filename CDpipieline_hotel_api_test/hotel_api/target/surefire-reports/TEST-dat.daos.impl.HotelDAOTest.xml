@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="dat.daos.impl.HotelDAOTest" time="5.088" tests="2" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Github 3sem\hotel_api\target\test-classes;C:\Github 3sem\hotel_api\target\classes;C:\Users\offic\.m2\repository\io\javalin\javalin-bundle\6.1.3\javalin-bundle-6.1.3.jar;C:\Users\offic\.m2\repository\io\javalin\javalin\6.1.3\javalin-6.1.3.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-server\11.0.20\jetty-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-http\11.0.20\jetty-http-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.20\websocket-jetty-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.20\jetty-servlet-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-security\11.0.20\jetty-security-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.20\jetty-webapp-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.20\jetty-xml-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.20\websocket-jetty-api-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.20\websocket-jetty-common-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.20\websocket-core-common-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.20\websocket-servlet-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.20\websocket-core-server-11.0.20.jar;C:\Users\offic\.m2\repository\io\javalin\javalin-context-mock\6.1.3\javalin-context-mock-6.1.3.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\offic\.m2\repository\io\javalin\javalin-testtools\6.1.3\javalin-testtools-6.1.3.jar;C:\Users\offic\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\offic\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\offic\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.10\kotlin-stdlib-common-1.9.10.jar;C:\Users\offic\.m2\repository\io\javalin\javalin-micrometer\6.1.3\javalin-micrometer-6.1.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-core\1.12.3\micrometer-core-1.12.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\offic\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\offic\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-jetty11\1.12.3\micrometer-jetty11-1.12.3.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\module\jackson-module-kotlin\2.16.1\jackson-module-kotlin-2.16.1.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.6.21\kotlin-reflect-1.6.21.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.16.1\jackson-datatype-jsr310-2.16.1.jar;C:\Users\offic\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\offic\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\offic\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\http2\http2-server\11.0.20\http2-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\http2\http2-common\11.0.20\http2-common-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\http2\http2-hpack\11.0.20\http2-hpack-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-alpn-conscrypt-server\11.0.20\jetty-alpn-conscrypt-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-alpn-server\11.0.20\jetty-alpn-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-io\11.0.20\jetty-io-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-util\11.0.20\jetty-util-11.0.20.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.22\kotlin-stdlib-jdk8-1.9.22.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.22\kotlin-stdlib-1.9.22.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.22\kotlin-stdlib-jdk7-1.9.22.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\offic\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\offic\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\offic\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\offic\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\offic\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\offic\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\offic\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\offic\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\offic\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\offic\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\offic\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\offic\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\offic\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\offic\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\offic\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\offic\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\offic\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\offic\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\offic\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\offic\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\offic\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\offic\.m2\repository\org\hibernate\orm\hibernate-hikaricp\6.2.4.Final\hibernate-hikaricp-6.2.4.Final.jar;C:\Users\offic\.m2\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;C:\Users\offic\.m2\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;C:\Users\offic\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\offic\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\offic\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\offic\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\offic\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\offic\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\offic\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\offic\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\offic\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\offic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\offic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\offic\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\offic\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\offic\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\offic\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\offic\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\offic\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\offic\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\offic\.m2\repository\org\testcontainers\postgresql\1.18.0\postgresql-1.18.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\junit-jupiter\1.18.0\junit-jupiter-1.18.0.jar;C:\Users\offic\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\offic\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\offic\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\offic\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\offic\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\offic\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\offic\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\offic\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\offic\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\offic\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\offic\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\offic\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\offic\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\offic\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\offic\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\offic\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\offic\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\offic\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\offic\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\offic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\offic\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\offic\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\offic\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\offic\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\offic\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\offic\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Copenhagen"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="DK"/>
+    <property name="sun.boot.library.path" value="C:\JDK\bin"/>
+    <property name="sun.java.command" value="C:\Users\offic\AppData\Local\Temp\surefire15455638874804793216\surefirebooter-20241002095712097_3.jar C:\Users\offic\AppData\Local\Temp\surefire15455638874804793216 2024-10-02T09-57-11_937-jvmRun1 surefire-20241002095712097_1tmp surefire_0-20241002095712097_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Github 3sem\hotel_api\target\test-classes;C:\Github 3sem\hotel_api\target\classes;C:\Users\offic\.m2\repository\io\javalin\javalin-bundle\6.1.3\javalin-bundle-6.1.3.jar;C:\Users\offic\.m2\repository\io\javalin\javalin\6.1.3\javalin-6.1.3.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-server\11.0.20\jetty-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-http\11.0.20\jetty-http-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.20\websocket-jetty-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.20\jetty-servlet-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-security\11.0.20\jetty-security-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.20\jetty-webapp-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.20\jetty-xml-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.20\websocket-jetty-api-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.20\websocket-jetty-common-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.20\websocket-core-common-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.20\websocket-servlet-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.20\websocket-core-server-11.0.20.jar;C:\Users\offic\.m2\repository\io\javalin\javalin-context-mock\6.1.3\javalin-context-mock-6.1.3.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\offic\.m2\repository\io\javalin\javalin-testtools\6.1.3\javalin-testtools-6.1.3.jar;C:\Users\offic\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\offic\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\offic\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.10\kotlin-stdlib-common-1.9.10.jar;C:\Users\offic\.m2\repository\io\javalin\javalin-micrometer\6.1.3\javalin-micrometer-6.1.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-core\1.12.3\micrometer-core-1.12.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\offic\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\offic\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\offic\.m2\repository\io\micrometer\micrometer-jetty11\1.12.3\micrometer-jetty11-1.12.3.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\module\jackson-module-kotlin\2.16.1\jackson-module-kotlin-2.16.1.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.6.21\kotlin-reflect-1.6.21.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.16.1\jackson-datatype-jsr310-2.16.1.jar;C:\Users\offic\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\offic\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\offic\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\http2\http2-server\11.0.20\http2-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\http2\http2-common\11.0.20\http2-common-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\http2\http2-hpack\11.0.20\http2-hpack-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-alpn-conscrypt-server\11.0.20\jetty-alpn-conscrypt-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-alpn-server\11.0.20\jetty-alpn-server-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-io\11.0.20\jetty-io-11.0.20.jar;C:\Users\offic\.m2\repository\org\eclipse\jetty\jetty-util\11.0.20\jetty-util-11.0.20.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.22\kotlin-stdlib-jdk8-1.9.22.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.22\kotlin-stdlib-1.9.22.jar;C:\Users\offic\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.22\kotlin-stdlib-jdk7-1.9.22.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\offic\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\offic\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\offic\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\offic\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\offic\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\offic\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\offic\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\offic\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\offic\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\offic\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\offic\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\offic\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\offic\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\offic\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\offic\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\offic\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\offic\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\offic\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\offic\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\offic\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\offic\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\offic\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\offic\.m2\repository\org\hibernate\orm\hibernate-hikaricp\6.2.4.Final\hibernate-hikaricp-6.2.4.Final.jar;C:\Users\offic\.m2\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;C:\Users\offic\.m2\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;C:\Users\offic\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\offic\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\offic\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\offic\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\offic\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\offic\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\offic\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\offic\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\offic\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\offic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\offic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\offic\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\offic\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\offic\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\offic\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\offic\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\offic\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\offic\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\offic\.m2\repository\org\testcontainers\postgresql\1.18.0\postgresql-1.18.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\offic\.m2\repository\org\testcontainers\junit-jupiter\1.18.0\junit-jupiter-1.18.0.jar;C:\Users\offic\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\offic\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\offic\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\offic\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\offic\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\offic\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\offic\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\offic\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\offic\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\offic\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\offic\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\offic\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\offic\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\offic\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\offic\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\offic\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\offic\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\offic\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\offic\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\offic\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\offic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\offic\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\offic\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\offic\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\offic\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\offic\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\offic\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\offic"/>
+    <property name="user.language" value="da"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\JDK"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Github 3sem\hotel_api"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\offic\AppData\Local\Temp\surefire15455638874804793216\surefirebooter-20241002095712097_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-58"/>
+    <property name="user.name" value="Allan Chandler"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\offic\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\offic\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.0.1"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="C:\Github 3sem\hotel_api"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Git\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\offic\AppData\Local\Microsoft\WindowsApps;C:\Users\offic\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.2+13-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="create" classname="dat.daos.impl.HotelDAOTest" time="0.11">
+    <system-out><![CDATA[09:57:12,874 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.7
+09:57:12,875 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - No custom configurators were discovered as a service.
+09:57:12,875 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+09:57:12,876 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+09:57:12,879 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+09:57:12,880 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+09:57:12,886 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+09:57:12,886 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+09:57:12,886 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+09:57:12,887 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+09:57:12,890 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Github%203sem/hotel_api/target/classes/logback.xml]
+09:57:12,891 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@4196c360 - Resource [logback.xml] occurs multiple times on the classpath.
+09:57:12,891 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@4196c360 - Resource [logback.xml] occurs at [file:/C:/Github%203sem/hotel_api/target/classes/logback.xml]
+09:57:12,891 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@4196c360 - Resource [logback.xml] occurs at [jar:file:/C:/Users/offic/.m2/repository/io/javalin/javalin-bundle/6.1.3/javalin-bundle-6.1.3.jar!/logback.xml]
+09:57:12,991 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1727855832989)
+09:57:12,991 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - No 'scanPeriod' specified. Defaulting to 1 minutes
+09:57:12,991 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [file:/C:/Github%203sem/hotel_api/target/classes/logback.xml] 
+09:57:12,991 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+09:57:12,999 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+09:57:12,999 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+09:57:13,007 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:57:13,042 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+09:57:13,042 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+09:57:13,045 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@41294f8 - value "src/main/resources/logs/application.log" substituted for "${LOG_BASEDIR}/${LOG_FILE}.log"
+09:57:13,046 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:57:13,051 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@41294f8 - value "src/main/resources/logs/application.%d{yyyy-MM-dd}.gz" substituted for "${LOG_BASEDIR}/${LOG_FILE}.%d{yyyy-MM-dd}.gz"
+09:57:13,051 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@41294f8 - value "180" substituted for "${LOG_FILE_MAX_HISTORY}"
+09:57:13,054 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@41294f8 - value "10MB" substituted for "${LOG_FILE_MAX_SIZE}"
+09:57:13,054 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@35984028 - setting totalSizeCap to 10 MB
+09:57:13,056 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@35984028 - Will use gz compression
+09:57:13,057 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@35984028 - Will use the pattern src/main/resources/logs/application.%d{yyyy-MM-dd} for the active file
+09:57:13,061 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'src/main/resources/logs/application.%d{yyyy-MM-dd}.gz'.
+09:57:13,061 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+09:57:13,062 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-10-02T07:55:30.036Z
+09:57:13,065 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - A triggering policy of type TimeBasedRollingPolicy was already set.
+09:57:13,065 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Note that TimeBasedRollingPolicy doubles as a RollingPolicy
+09:57:13,065 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - See also http://logback.qos.ch/codes.html#rfa_reset_rp_or_tp
+09:57:13,066 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: src/main/resources/logs/application.log
+09:57:13,067 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [src/main/resources/logs/application.log]
+09:57:13,068 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [dat.lyngby] to INFO
+09:57:13,071 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [dat.lyngby] to false
+09:57:13,071 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[dat.lyngby]
+09:57:13,071 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[dat.lyngby]
+09:57:13,071 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+09:57:13,071 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+09:57:13,072 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@20435c40 - End of configuration.
+09:57:13,072 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@573906eb - Registering current configuration as safe fallback point
+09:57:13,072 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2141a12 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 186 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+2024-10-02 09:57:13,146 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.hibernate.Version&amp#27;[0;39m - &amp#27;[32mHHH000412: Hibernate ORM core version 6.2.4.Final
+&amp#27;[0;39m2024-10-02 09:57:13,151 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.hibernate.cfg.Environment&amp#27;[0;39m - &amp#27;[32mHHH000406: Using bytecode reflection optimizer
+&amp#27;[0;39m2024-10-02 09:57:13,398 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.HikariDataSource&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Starting...
+&amp#27;[0;39m2024-10-02 09:57:13,452 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.ImageNameSubstitutor&amp#27;[0;39m - &amp#27;[32mImage name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+&amp#27;[0;39m2024-10-02 09:57:13,617 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.d.DockerClientProviderStrategy&amp#27;[0;39m - &amp#27;[32mLoaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+&amp#27;[0;39m2024-10-02 09:57:13,962 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.d.DockerClientProviderStrategy&amp#27;[0;39m - &amp#27;[32mFound Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+&amp#27;[0;39m2024-10-02 09:57:13,964 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mDocker host IP address is localhost
+&amp#27;[0;39m2024-10-02 09:57:13,985 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mConnected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7351 MB
+&amp#27;[0;39m2024-10-02 09:57:14,012 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mCreating container for image: testcontainers/ryuk:0.4.0
+&amp#27;[0;39m2024-10-02 09:57:14,297 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.RegistryAuthLocator&amp#27;[0;39m - &amp#27;[32mCredential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+&amp#27;[0;39m2024-10-02 09:57:14,384 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mContainer testcontainers/ryuk:0.4.0 is starting: 0ce969256939f7e8ea0c1aa7ad9ae4fb3206370cbf2a5cd8f38ab44eab325f6c
+&amp#27;[0;39m2024-10-02 09:57:14,751 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mContainer testcontainers/ryuk:0.4.0 started in PT0.7551887S
+&amp#27;[0;39m2024-10-02 09:57:14,757 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.RyukResourceReaper&amp#27;[0;39m - &amp#27;[32mRyuk started - will monitor and terminate Testcontainers containers on JVM exit
+&amp#27;[0;39m2024-10-02 09:57:14,757 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mChecking the system...
+&amp#27;[0;39m2024-10-02 09:57:14,758 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32m✔︎ Docker server version should be at least 1.6.0
+&amp#27;[0;39m2024-10-02 09:57:14,758 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mCreating container for image: postgres:15.3-alpine3.18
+&amp#27;[0;39m2024-10-02 09:57:14,795 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer postgres:15.3-alpine3.18 is starting: 268fd9011b92ca168c9da42864fd0ad8590586b8124c12ef69b92abfedf87a5a
+&amp#27;[0;39m2024-10-02 09:57:16,307 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer postgres:15.3-alpine3.18 started in PT1.5489879S
+&amp#27;[0;39m2024-10-02 09:57:16,308 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer is started (JDBC URL: jdbc:postgresql://localhost:55819/test?loggerLevel=OFF)
+&amp#27;[0;39m2024-10-02 09:57:16,462 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.pool.HikariPool&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Added connection org.testcontainers.jdbc.ConnectionWrapper@34aeacd1
+&amp#27;[0;39m2024-10-02 09:57:16,464 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.HikariDataSource&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Start completed.
+&amp#27;[0;39m2024-10-02 09:57:16,912 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.h.b.i.BytecodeProviderInitiator&amp#27;[0;39m - &amp#27;[32mHHH000021: Bytecode provider name : bytebuddy
+&amp#27;[0;39mHibernate: 
+    alter table if exists room 
+       drop constraint if exists FKdosq3ww4h9m2osim6o0lugng8
+2024-10-02 09:57:17,730 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2024-10-02 09:57:17,731 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mrelation "room" does not exist, skipping
+&amp#27;[0;39mHibernate: 
+    drop table if exists hotel cascade
+2024-10-02 09:57:17,732 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2024-10-02 09:57:17,732 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "hotel" does not exist, skipping
+&amp#27;[0;39mHibernate: 
+    drop table if exists room cascade
+2024-10-02 09:57:17,733 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2024-10-02 09:57:17,734 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "room" does not exist, skipping
+&amp#27;[0;39mHibernate: 
+    create table hotel (
+        hotel_id serial not null,
+        hotel_address varchar(255) not null,
+        hotel_name varchar(255) not null unique,
+        hotel_type varchar(255) not null check (hotel_type in ('BUDGET','STANDARD','BUSINESS','LUXURY')),
+        primary key (hotel_id)
+    )
+Hibernate: 
+    create table room (
+        hotel_id integer not null,
+        price numeric(38,2) not null,
+        room_id serial not null,
+        room_number integer not null,
+        room_type varchar(255) not null check (room_type in ('SINGLE','DOUBLE','SUITE')),
+        primary key (room_id)
+    )
+Hibernate: 
+    alter table if exists room 
+       add constraint FKdosq3ww4h9m2osim6o0lugng8 
+       foreign key (hotel_id) 
+       references hotel
+Hibernate: 
+    /* insert for
+        dat.entities.Hotel */insert 
+    into
+        hotel (hotel_address,hotel_name,hotel_type) 
+    values
+        (?,?,?)
+Hibernate: 
+    /* insert for
+        dat.entities.Hotel */insert 
+    into
+        hotel (hotel_address,hotel_name,hotel_type) 
+    values
+        (?,?,?)
+Hibernate: 
+    /* insert for
+        dat.entities.Hotel */insert 
+    into
+        hotel (hotel_address,hotel_name,hotel_type) 
+    values
+        (?,?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="delete" classname="dat.daos.impl.HotelDAOTest" time="0.011">
+    <error message="could not execute statement [ERROR: duplicate key value violates unique constraint &quot;hotel_hotel_name_key&quot;&#10;  Detail: Key (hotel_name)=(Grand Hotel) already exists.] [/* insert for dat.entities.Hotel */insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)]" type="org.hibernate.exception.ConstraintViolationException"><![CDATA[org.hibernate.exception.ConstraintViolationException: 
+could not execute statement [ERROR: duplicate key value violates unique constraint "hotel_hotel_name_key"
+  Detail: Key (hotel_name)=(Grand Hotel) already exists.] [/* insert for dat.entities.Hotel */insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:95)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:278)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:101)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:170)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:112)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2737)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:647)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:278)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:259)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:309)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:363)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:277)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:180)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:140)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:755)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:739)
+	at dat.daos.impl.HotelDAO.create(HotelDAO.java:48)
+	at dat.daos.impl.HotelDAOTest.populate3Hotels(HotelDAOTest.java:42)
+	at dat.daos.impl.HotelDAOTest.delete(HotelDAOTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "hotel_hotel_name_key"
+  Detail: Key (hotel_name)=(Grand Hotel) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275)
+	... 93 more
+]]></error>
+    <system-out><![CDATA[Hibernate: 
+    /* insert for
+        dat.entities.Hotel */insert 
+    into
+        hotel (hotel_address,hotel_name,hotel_type) 
+    values
+        (?,?,?)
+2024-10-02 09:57:17,877 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Error: 0, SQLState: 23505
+&amp#27;[0;39m2024-10-02 09:57:17,877 [main] &amp#27;[1;31mERROR&amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mERROR: duplicate key value violates unique constraint "hotel_hotel_name_key"
+  Detail: Key (hotel_name)=(Grand Hotel) already exists.
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+</testsuite>

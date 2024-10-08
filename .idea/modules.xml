@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CI_CD_Pipeline.iml" filepath="$PROJECT_DIR$/.idea/CI_CD_Pipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CDpipieline_hotel_api_test/hotel_api/hotel_rest_3sem.iml" filepath="$PROJECT_DIR$/CDpipieline_hotel_api_test/hotel_api/hotel_rest_3sem.iml" />
+    </modules>
+  </component>
+</project>
